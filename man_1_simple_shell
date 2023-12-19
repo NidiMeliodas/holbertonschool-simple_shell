@@ -1,0 +1,31 @@
+.TH simple_shell
+.SH NAME
+printf \- formatted output conversion.
+
+.SH SYNOPSIS
+#include <stdio>
+int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+Function that displays results according to the format
+and/or choice of the user.
+
+.SH RETURN VALUE
+Upon successful return, these functions return the number of
+characters printed. The nuseradd does not take any options.
+However, you can supply username.
+
+.SH EXEMPLES
+#include <stdio.h>
+
+int main(void) {
+        printf("Hello World!\n");
+    return 0;
+}
+
+.SH AUTHORS
+Nidigashan Kanagendran & Hadrien Tayac
+
+.TH man 8 "19/12/2023" "1.0" "printf man page"
+24/11/2023
+
