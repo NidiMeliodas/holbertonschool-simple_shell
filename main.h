@@ -1,15 +1,20 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Libraries */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <sched.h>
+#include <sys/types.h>
 #include <sys/wait.h>
 
-/* Prototyes */
-void prompt(void);
-void execute_cmd(char *command);
+extern char **environ;
+
+void exec(char **args, char *input);
+void tokenize(char *input, char *args[]);
+void handlePath(const char *path, int length);
+void printEnv(void);
+char *path(char *input);
 
 #endif
